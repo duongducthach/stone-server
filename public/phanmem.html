@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phần mềm bản quyền</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="icon" href="logoweb.png" type="image/x-icon" />
+  <script src="script.js"></script> <!-- THÊM DÒNG NÀY -->
+</head>
+<body>
+  <!-- Nút về trang chủ -->
+  <button onclick="window.location.href='/'">🏠 Stone</button>
+
+  <h1>🧰 Danh sách phần mềm bản quyền</h1>
+  <p id="xamnghieng">
+    Lưu ý:  Pass giải nén thach.top 
+  </p>
+
+  <!-- Danh sách phần mềm -->
+  <div class="container">
+    <ul style="text-align:left; padding-left: 20px;">
+      <li>👑 <strong>GPM 3.02 Active</strong> – <a href="https://drive.google.com/file/d/1NHLttZcem9aFGC3BFu0AgnYrYN3OesBl/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>🛠️ <strong>Tool active full Microsoft Office 365</strong> – <a href="https://drive.google.com/file/d/16qShsDsrtuDEzTJOTJ5ddYRPuMqMYK9b/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>🖌️ <strong>Photoshop 2017 full active</strong> – <a href="https://drive.google.com/file/d/1hLUfdqpKX_SZIOo3MZ3kNd7wTc_fG0qf/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>🎨 <strong>Tool active full Adobe (Ps, Pr, Ai, Lr…)</strong> – <a href="https://drive.google.com/file/d/1jZILF4nsIL-wgzAasZHKjO9TyjpeN3ty/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>🎬 <strong>Premiere Pro 2020 full active</strong> – <a href="https://drive.google.com/file/d/1sbdFg6PBESKEJUL4dYiRLWcgBczGcyVo/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>📐 <strong>AutoCAD 2021 full active</strong> – <a href="https://drive.google.com/file/d/1UT4hNEGcKjd20vMgdfCWTDkeqlp64vsM/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>📄 <strong>Foxit PhantomPDF full active</strong> – <a href="https://drive.google.com/file/d/1it5GdPO_VQjKyCLZ5B31-i7VY-jrpK8X/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>🧩 <strong>Tool KMSpico active Win & Office</strong> – <a href="https://drive.google.com/file/d/1L2at03I7QXJVl3P1TFlmPtYxBDcdjLMW/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>📝 <strong>Tool cài & active Microsoft Office 2021 Pro</strong> – <a href="https://drive.google.com/file/d/1gYdDo1Wn7IVXNz0_Vh5kqf5h4-NlIfl_/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>🖼️ <strong>Photoshop 2025 full active</strong> – <a href="https://drive.google.com/file/d/1MA7QCH-l-Nmr_M45Bd3KzqiVi33tz8vX/view?usp=sharing" target="_blank">Tải về</a></li>
+      <li>📎 <strong>File active AutoCAD</strong> – <a href="https://drive.google.com/file/d/16SgnvA3Rnxt165kw0uKZRQ2sJ-WHrnu5/view?usp=sharing" target="_blank">Tải về</a></li>
+    </ul>
+  </div>
+<!-- Kích hoạt phần mềm bằng HWID (trần trụi không khung) -->
+<h1>
+  🔐 Nhập HWID để kích hoạt phần mềm:
+</h1>
+<p id="xamnghieng">
+  Lưu ý: GPM cần nhập key kích hoạt, còn lại tải về là dùng
+</p>
+
+<form onsubmit="event.preventDefault(); postHWID(document.getElementById('hwidInput').value);">
+  <input
+    type="text"
+    id="hwidInput"
+    placeholder="Dán HWID vào đây..."
+    style="padding: 10px; width: 300px; margin-top: 10px; border-radius: 6px; border: 1px solid #ccc;"
+    required
+  />
+  <button
+    type="submit"
+    style="padding: 10px 20px; margin-left: 10px; border-radius: 6px; background-color: #4CAF50; color: white; border: none;"
+  >
+    Kích hoạt
+  </button>
+</form>
+
+<p id="result" style="margin-top: 10px; font-weight: bold;"></p>
+
+  <!-- Thông tin liên hệ -->
+<div class="contact-box">
+  <h3>📞 Thông tin  liên hệ:</h3>
+  <div class="contact-columns">
+    <div class="column">
+      <p>💬 Zalo: <a href="https://zalo.me/0345220694" target="_blank">@St0ne2206</a></p>
+      <p>🖥 Facebook:  <a href="https://fb.com/St0ne2206" target="_blank">@St0ne2206</a></p>
+      <p>🛩️ Telegram:  <a href="https://t.me/Stone2206" target="_blank">@Stone2206</a></p>
+    </div>
+    <div class="column">
+      <p>🎵 TikTok: <a href="https://www.tiktok.com/@st0ne2206" target="_blank">@st0ne2206</a></p>
+      <p>📺 YouTube: <a href="https://www.youtube.com/@st0ne2206" target="_blank">@st0ne2206</a></p>
+      <p>🎮 Discord: <a href="https://discord.gg/4EcsGeKG" target="_blank">@St0ne2206</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

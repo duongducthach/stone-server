@@ -1,0 +1,292 @@
+/* style.css */
+
+/* Định dạng chung cho toàn bộ trang */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Định dạng cho tất cả các nút bấm (button) trên trang */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700; /* Đậm vừa phải */
+  text-transform: uppercase; /* Viết hoa toàn bộ như tiêu đề */
+  letter-spacing: 0.5px; /* Giãn chữ nhẹ để rõ hơn */
+}
+
+/* Hiệu ứng khi rê chuột lên nút bấm */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Container căn giữa và tạo khung cho nội dung chính */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Bọc input để dễ xử lý vị trí các icon hoặc nút phụ */
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Định dạng cho icon con mắt (hiện/ẩn mật khẩu) trong input */
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Định dạng chung cho các input text và password */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin: 10px 0;
+  width: 300px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Box hiển thị thông tin liên hệ */
+.contact-box {
+  margin: 50px auto 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Tiêu đề trong box liên hệ */
+.contact-box h3 {
+  color: darkred;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* Định dạng cho từng dòng thông tin liên hệ */
+.contact-box p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* Định dạng cho link trong box liên hệ */
+.contact-box a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+/* Hiệu ứng hover cho link liên hệ */
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+.contact-columns {
+  display: flex;
+  justify-content: center;   /* Căn giữa các cột trong khung */
+  gap: 40px;                 /* Khoảng cách giữa 2 cột */
+  flex-wrap: wrap;
+  text-align: center;        /* Căn giữa nội dung bên trong cột */
+  margin-top: 15px;
+}
+
+.contact-columns .column {
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;          /* Giới hạn để giữ bố cục gọn */
+}
+
+
+/* ==== Bảng dịch vụ MXH ==== */
+/* Định dạng tiêu đề lớn của trang */
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: #333;
+  font-size: 24px; /* Hoặc 22px, tuỳ độ nhỏ mày muốn */
+  font-weight: 600; /* Cho đậm vừa, nhìn cứng cáp mà không bị thô */
+}
+
+/* Định dạng tiêu đề nhóm dịch vụ (có thể click để mở/đóng) */
+h2 {
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Định dạng icon toggle trong tiêu đề nhóm dịch vụ */
+h2 .toggle-icon {
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+/* Hiệu ứng khi nhóm dịch vụ mở ra */
+h2.open .toggle-icon {
+  transform: rotate(45deg);
+}
+
+/* Nhóm dịch vụ, ẩn/hiện khi click */
+.service-group {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Định dạng bảng dịch vụ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Định dạng ô tiêu đề và dữ liệu trong bảng */
+th, td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Định dạng hàng tiêu đề bảng */
+th {
+  background-color: #e9ecef;
+}
+
+/* Màu nền cho từng loại dịch vụ MXH */
+h2.tiktok    { background-color: #000000; }
+h2.facebook  { background-color: #1877F2; }
+h2.instagram { background-color: #888888; }
+h2.youtube   { background-color: #FF0000; }
+h2.shopee    { background-color: #EA501F; }
+h2.lazada    { background-color: #0074D4; }
+h2.threads   { background-color: #000000; }
+h2.twitter   { background-color: #000000; }
+h2.linkedin  { background-color: #0074D4; }
+h2.others    { background-color: #45a049; }
+
+/* Hiệu ứng hover cho tiêu đề nhóm dịch vụ */
+h2:hover {
+  filter: brightness(1.1);
+}
+
+/* Hiển thị dòng hướng dẫn proxy với chữ nghiêng và màu xám */
+#xamnghieng {
+  text-align: center; 
+  color: gray; 
+  font-style: italic; 
+  margin-top: 5px;
+}
+
+/* Định dạng riêng cho nút có class button1 */
+.button1 {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 6px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+/* Định dạng cho ô nhập key (input) có thêm nút/biểu tượng bên phải */
+.key-input {
+  padding: 10px;
+  width: 300px;
+  margin-top: 0px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  height: 40px; /* hoặc bỏ height nếu muốn tự động */
+  font-size: 16px;
+}
+
+.shop-banner {
+  background: url('banner-tiktokshop.jpg') no-repeat center center/cover;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  padding: 80px 20px; /* tăng padding cho cân hình */
+  color: white;
+  position: relative;
+}
+
+/* bỏ nền mờ, chỉ giữ text và nút */
+.banner-content {
+  display: inline-block;
+  padding: 0; /* bỏ padding cũ */
+  border-radius: 0;
+  background: none;
+}
+
+.banner-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000,
+     0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+
+/* nút mua */
+.buy-btn {
+  background: linear-gradient(145deg, #000000, #1a1a1a);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.buy-btn:hover {
+  background: linear-gradient(145deg, #1a1a1a, #000000);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
